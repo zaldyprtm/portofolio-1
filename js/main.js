@@ -21,3 +21,31 @@ overlay.addEventListener('click', () => {
     searchContainer.classList.add('hide');
     overlay.classList.remove('show');
 })
+
+// mobile version
+
+const menuIconContainer = document.querySelector('nav .menu-icon-container');
+const navContainer = document.querySelector('.nav-container');
+
+menuIconContainer.addEventListener('click', () => {
+    navContainer.classList.toggle('active');
+})
+
+const searchbar = document.querySelector('.mobile-search-container .search-bar');
+const nav = document.querySelector('.nav-container nav');
+const searchInput = document.querySelector('.mobile-search-container input');
+const cancelBtn = document.querySelector('.mobile-search-container .cancel-btn');
+
+searchInput.addEventListener('click', () => {
+    searchbar.classList.add('active');
+    nav.classList.add('move-up');
+    desktopNav.classList.add('move-down');
+
+})
+
+cancelBtn.addEventListener('click', () => {
+    searchbar.classList.remove('active');
+    nav.classList.remove('move-up');
+    desktopNav.classList.remove('move-down');
+
+})
