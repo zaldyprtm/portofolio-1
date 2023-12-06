@@ -47,5 +47,5 @@ cancelBtn.addEventListener('click', () => {
     searchbar.classList.remove('active');
     nav.classList.remove('move-up');
     desktopNav.classList.remove('move-down');
-
 })
+

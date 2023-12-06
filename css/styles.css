@@ -372,6 +372,7 @@ nav .desktop-nav li a:hover{
         justify-content: start;
         overflow: hidden;
         z-index: -1;
+        transition: all 1000ms ease;
     }
 
     .nav-container.active .desktop-nav{
@@ -399,6 +400,14 @@ nav .desktop-nav li a:hover{
         border-bottom: 1px solid #616161;
         width: 100%;
         font-size: 17px;
+        transform: translateY(-80px);
+        opacity: 0;
+        transition: all 700ms ease;
+    }
+
+    .nav-container.active .desktop-nav li a{
+        transform: translateY(0px);
+        opacity: 1;
     }
 
     /*mobile nav */
@@ -429,6 +438,9 @@ nav .desktop-nav li a:hover{
         height: 1px;
         width: 100%;
         background: #fff;
+        transition-property: transform, top;
+        transition-delay: 0ms, 160ms;
+        transition-duration: 200ms;
     }
 
     nav .menu-icon .line-1{
@@ -442,11 +454,18 @@ nav .desktop-nav li a:hover{
     .nav-container.active nav .menu-icon-container .menu-icon .line-1{
         top: 0;
         transform: rotate(45deg);
+        transition-property: top, transform;
+        transition-delay: 0ms, 160ms;
+        transition-duration: 200ms;
     }
 
     .nav-container.active nav .menu-icon-container .menu-icon .line-2{
         top: 0;
         transform: rotate(-45deg);
+        transition-property: transform, top;
+        transition-delay: 0ms, 160ms;
+        transition-duration: 200ms;
+
     }
 
     /*bag hide anim */
@@ -455,6 +474,10 @@ nav .desktop-nav li a:hover{
         transform: translateY(8px);
         opacity: 0;
         pointer-events: none;
+    }
+
+    .nav-container .mobile-nav .link-bag{
+        transition: all 1000ms ease;
     }
 
     /* quick links */
@@ -480,16 +503,21 @@ nav .desktop-nav li a:hover{
     .mobile-search-container{
         position: relative;
         padding: 0 16px;
-        margin-top: 10px;
+        margin-top: -30px;
         border-bottom: 1px solid #616161;
         display: flex;
         padding-bottom: 16px;
         align-items: center;
-        transform: rotateX('90deg');
+        transform: rotateX(90deg);
+        opacity: 0;
+        transition: all 600ms ease;
     }
 
     .nav-container.active .mobile-search-container{
-        transform: rotateX('0deg');
+        transform: rotateX(0deg);
+        margin-top: 10px;
+        opacity: 1;
+
     }
 
     .mobile-search-container .link-search{
@@ -514,6 +542,7 @@ nav .desktop-nav li a:hover{
         cursor: pointer;
         width: 0px;
         overflow: hidden;
+        transition: all 400ms ease;
     }
 
     .mobile-search-container .search-bar.active + .cancel-btn{
@@ -542,6 +571,7 @@ nav .desktop-nav li a:hover{
         top: 80px;
         opacity: 1;
         pointer-events: auto;
+        transition-delay: 400ms;
     }
 
     .mobile-search-container .quick-links{
@@ -553,6 +583,7 @@ nav .desktop-nav li a:hover{
         opacity: 0;
         pointer-events: none;
         top: 10px;
+        transition: all 400ms ease;
     }
 
     .mobile-search-container .quick-links ul{
@@ -579,6 +610,12 @@ nav .desktop-nav li a:hover{
 
         .mobile-search-container .quick-links ul li a:hover{
             color: #2997ff;
+        }
+
+        /*nav animate*/
+
+        .nav-container nav {
+            transition: all 400ms ease;
         }
 
 }
