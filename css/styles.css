@@ -54,7 +54,7 @@ nav .desktop-nav li a:hover{
 }
 
 .link-logo{
-    background: url(/assets/apple-logo.svg);
+    background: url("../assets/apple-logo.svg");
     display: block;
     background-position: center;
     height: 44px;
@@ -65,7 +65,7 @@ nav .desktop-nav li a:hover{
 
 
 .link-search{
-    background: url(/assets/search-icon.svg);
+    background: url("../assets/search-icon.svg");
     display: block;
     background-position: center;
     background-size: 18px;
@@ -75,7 +75,7 @@ nav .desktop-nav li a:hover{
 }
 
 .link-bag{
-    background: url(/assets/bag-icon.svg);
+    background: url("../assets/bag-icon.svg");
     display: block;
     background-position: center;
     background-size: 17px;
@@ -86,7 +86,7 @@ nav .desktop-nav li a:hover{
 
 
 .link-close{
-    background: url(/assets/close-icon.svg);
+    background: url("../assets/close-icon.svg");
     display: block;
     background-position: center;
     background-size: 17px;
