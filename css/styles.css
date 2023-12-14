@@ -1151,13 +1151,14 @@ a{
   #mainbox4 h1{
     font-family: "Inter", sans-serif;
     text-align: center;
-    font-size:60px;
+    font-size:50px;
     letter-spacing: -.06em;
     
 }
 
 #mainbox4 h2{
     text-align: center;
+    font-size: 18px;
 }
 
 #mainbox4 p{
