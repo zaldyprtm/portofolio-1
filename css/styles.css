@@ -1231,3 +1231,17 @@ a{
      opacity: 1;
      color: #118cff;
  }
+
+ /*Slider*/
+
+.slider img{
+    max-width: 100%;
+    max-height: 50%;
+    border-radius: 8px;
+ }
+
+ .slider {
+   background-color: wheat;
+ }
+
+ 

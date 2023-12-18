@@ -58,3 +58,28 @@ cancelBtn.addEventListener('click', () => {
 })
 }
 
+// carousel
+
+var img = document.getElementById('img')
+
+var images = [
+    "assets/iPhoness.webp",
+    "assets/iww.jpg",
+    "assets/macb.webp",
+    "assets/iwtch.png",
+    
+    
+];
+
+var startImage = 0;
+
+function slider()   {
+    if (startImage < images.length) {
+        startImage = startImage + 1;
+    }else   {
+        startImage = 1;
+    }
+
+    img.innerHTML = "<img src=" + images[startImage - 1] + ">";
+}
+setInterval(slider, 2000);
