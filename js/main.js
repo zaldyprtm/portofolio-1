@@ -60,26 +60,28 @@ cancelBtn.addEventListener('click', () => {
 
 // carousel
 
-var img = document.getElementById('img')
+var slideIndex = 1;
+showSlides(slideIndex);
 
-var images = [
-    "assets/iPhoness.webp",
-    "assets/iww.jpg",
-    "assets/macb.webp",
-    "assets/iwtch.png",
-    
-    
-];
-
-var startImage = 0;
-
-function slider()   {
-    if (startImage < images.length) {
-        startImage = startImage + 1;
-    }else   {
-        startImage = 1;
-    }
-
-    img.innerHTML = "<img src=" + images[startImage - 1] + ">";
+function plusSlides(n)  {
+        showSlides(slideIndex += n);
 }
-setInterval(slider, 2000);
+
+
+function showSlides(n)  {
+    var i;
+    let slides = document.getElementsByClassName("img-slide");
+    
+    if (n > slides.length) {slideIndex = 1}
+   else if (n < 1) {slideIndex = slides.length}
+
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = 'none';
+    }
+    
+    slides[slideIndex - 1].style.display = 'block';
+}
+
+setInterval(() =>   {
+    plusSlides(1);
+}, 2000);
