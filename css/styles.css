@@ -947,6 +947,23 @@ nav{
     .mainbox4 a{
         text-align: center;
     }
+
+
+    .footext p{
+        font-size: 10px;
+        color: #000;
+    }
+
+    .foot p{
+        font-size: 8px;
+    }
+    .copy   {
+        font-size: 9px;
+    }
+
+    .cop p{
+        font-size: 10px;
+    }
 }
 
 
@@ -1254,11 +1271,8 @@ a{
     position: relative;
     margin: auto;
   }
-  .mySlides {
-    display: none;
-  }
-
-  .fade {
+ 
+  .img-slide {
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -1266,4 +1280,62 @@ a{
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+
+  .img-slide{
+    display: flex;
+    position: relative;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footext {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    text-wrap: wrap;
+    color: rgb(156, 149, 135);
+    font-weight: 200;
+    margin:20px 50px;
+  }
+
+  .footext p {
+    text-align: justify;
+  }
+
+  .copy{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    text-wrap: wrap;
+    color: rgb(156, 149, 135);
+    font-weight: 200;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .privacy {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .term {
+    font-size: 11px;
+  }
+
+  .foot {
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .sales    {
+    font-size: 11px;
+  }
+
+  .site{
+    font-size: 11px;
+  }
+
+  .legal{
+    font-size: 11px;
   }
